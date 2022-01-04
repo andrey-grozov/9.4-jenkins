@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                git branch: '1011', credentialsId: 'git', url: 'https://github.com/andrey-grozov/mnt-homeworks-ansible.git'
+                git branch: 'main', credentialsId: 'git', url: 'https://github.com/andrey-grozov/9.4-jenkins.git'
             }
         }
         stage('Run') {
